@@ -1,10 +1,12 @@
 package ConsoleClient;
 
+import Verwaltung.DruckerVerwaltung;
+
 import java.util.Scanner;
 
 public class ConsoleClient {
 
-
+    DruckerVerwaltung verwaltung = new DruckerVerwaltung();
     Scanner scanner=new Scanner(System.in);
 
     void showMenu() {
@@ -12,6 +14,10 @@ public class ConsoleClient {
         System.out.println("0) Beenden");
         System.out.println("1) Druckerliste ausgeben");
         System.out.println("2) Admin Menü öffnen");
+    }
+
+    void printPrinterList(){
+        System.out.println(verwaltung.getPrinterList());
     }
 
     void processCommand()
@@ -22,7 +28,7 @@ public class ConsoleClient {
         switch (input)
         {
             case  1:
-
+                printPrinterList();
             break;
             case  2:
 
