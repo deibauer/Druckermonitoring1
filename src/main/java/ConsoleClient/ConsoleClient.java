@@ -23,7 +23,7 @@ public class ConsoleClient {
     void processCommand()
     {
         System.out.println("Bitte geben Sie eine Nummer ein!");
-        int input=scanner.nextInt();
+        int input = scanner.nextInt();
 
         switch (input)
         {
