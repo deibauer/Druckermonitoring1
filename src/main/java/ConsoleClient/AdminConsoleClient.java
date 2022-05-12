@@ -3,7 +3,7 @@ package ConsoleClient;
 public class AdminConsoleClient extends  ConsoleClient{
 
     @Override
-    void run(String i) {
+    void run() {
         System.out.println("Printer Monitoring - Menu");
         System.out.println("0) Beenden");
         System.out.println("1) Druckerliste ausgeben");
