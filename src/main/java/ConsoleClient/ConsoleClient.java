@@ -22,7 +22,7 @@ public class ConsoleClient {
         switch (input)
         {
             case  1:
-                printPrinterList();
+
             break;
             case  2:
 
@@ -47,4 +47,6 @@ public class ConsoleClient {
         processCommand();
 
     }
+
+
 }
