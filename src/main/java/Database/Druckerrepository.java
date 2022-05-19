@@ -15,7 +15,10 @@ public class Druckerrepository {
 
     //statischer Bereich wird immer vor Konstruktor ausgeführt um für jede Instanz zu gelten
     {
-        druckerListe.add(new Drucker());
+        druckerListe.add(new Drucker(33,"testdrucker","10.10.10.10"));
+    }
+    void addDrucker(Drucker drucker){
+        druckerListe.add(drucker);
     }
 
     public ArrayList getPrinterList(){
