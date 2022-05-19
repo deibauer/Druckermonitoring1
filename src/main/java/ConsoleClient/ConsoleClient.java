@@ -1,7 +1,9 @@
 package ConsoleClient;
 
+import Verwaltung.Drucker;
 import Verwaltung.DruckerVerwaltung;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ConsoleClient {
@@ -17,7 +19,12 @@ public class ConsoleClient {
     }
 
     void printPrinterList(){
-        System.out.println(verwaltung.getPrinterList());
+        ArrayList<Drucker>Druckers =verwaltung.getPrinterList();
+
+        System.out.println("#Druckername\tRaumNr\tIpAddresse");
+        for (Drucker d:Druckers) {
+            System.out.println("#"+d.getDruckername()+"\t\t"+d.getRaumNr()+"\t\t"+d.getIpAddresse()+"#");
+        }
     }
 
     void processCommand()

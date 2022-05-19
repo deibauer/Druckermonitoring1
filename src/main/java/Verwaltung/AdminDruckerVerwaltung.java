@@ -3,7 +3,9 @@ package Verwaltung;
 import Database.Druckerrepository;
 
 public class AdminDruckerVerwaltung {
-    Drucker addDrucker(Drucker drucker){
+    public void addDrucker(Drucker drucker){
+    Druckerrepository.addDrucker(drucker);
+
 
     }
 }
